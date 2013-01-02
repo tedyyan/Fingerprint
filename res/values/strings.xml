@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">手机银行</string>
+    <string name="hello_world">Demo程序, 仅供参考!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="demohome_jine_lab">金额：</string>
+    <string name="demohome_paybut">支付</string>
+    <string name="demohome_zhiwenlab">点击后，录入指纹</string>
+    <string name="demohome_hello">电子钱包</string>
+
+</resources>

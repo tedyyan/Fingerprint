@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function enableSuccessfulButton(textValue){
+			document.getElementById("Successful").enable();
+
+	}
+	function disableSuccessfulButton(textValue){
+			document.getElementById("Successful").disable();
+
+	}
+	function setZhiFuButtonText(textValue)
+	{
+		document.getElementById("ZhiFuButton").value = textValue;
+
+	}
+	function setHintText(textValue)
+	{
+		document.getElementById("HintText").value = textValue;
+
+	}
+	function setYuEText(textValue)
+	{
+		document.getElementById("YuEText").value = textValue;
+
+	}
+</script>
+
+</head>
+<h1>
+<a href="next.html" target="_blank">Password Pay</a>
+<br>
+YuE:
+<input type="text" name="YuEText" id="YuEText">
+<br>
+<br>
+Hint:
+<input type="text" name="HintText" id="HintText">
+<br>
+<br>
+<input id="ZhiFuButton" type="button" onClick="javascript:window.pay.clickOnZhiFu()" value="ZhiFu"/>
+<input id="Successful" type="button" onClick="javascript:window.pay.clickOnCheckSuccessfully()" value="Successfully"/>
+<input id="Failed" type="button" onClick="javascript:window.pay.clickOnSetting()" value="Setting"/>
+</html>

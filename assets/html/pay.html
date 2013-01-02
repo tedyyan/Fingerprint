@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+<script type="text/javascript">
+	function enableSuccessfulButton(textValue){
+			document.getElementById("Successful").enable();
+
+	}
+	function disableSuccessfulButton(textValue){
+			document.getElementById("Successful").disable();
+
+	}
+	function setZhiFuButtonText(textValue)
+	{
+		document.getElementById("ZhiFuButton").value = textValue;
+
+	}
+	function setHintText(textValue)
+	{
+		document.getElementById("HintText").value = textValue;
+
+	}
+	function setYuEText(textValue)
+	{
+		document.getElementById("YuEText").value = textValue;
+
+	}
+	function checkNumPassword()
+	{
+		if (document.getElementById("txt1").value == "1234")
+		{
+			window.pay.clickOnCheckSuccessfully();
+		}
+		else
+		{
+			window.pay.clickOnCheckFailed();
+		}
+
+	}
+</script>
+<style type="text/css">
+<!--
+body { margin:0 auto; font-size:12px; font-family:Verdana; line-height:1.5;}
+ul,dl,dt,dd,h1,h2,h3,h4,h5,h6,form { padding:0; margin:0;}
+ul { list-style:none;}
+img { border:0px;}
+a { color:#05a; text-decoration:none;}
+a:hover { color:#f00;}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+	margin:0;
+	padding:0;
+}
+body {
+	margin:0 auto;
+	padding:0;
+}
+body, button, input, select, textarea {
+	font:12px/1.5 tahoma, arial, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+}
+ol, ul, li, dl, dd, dt {
+	list-style:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.cb {
+	clear:both;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a {
+	color:#000;
+}
+fieldset, img {
+	border:0;
+}
+button, input, select, textarea {
+	font-size:100%;
+}
+body {
+	background-image:url(images/a31.jpg)
+}
+#w1{width:100% }
+#n1{width:100%; background-image:url(images/a02.jpg); height:47px; }
+#n1{width:100%; background-image:url(images/a02.jpg); height:47px; }
+#n11{ float:left;}
+#n12{ float:right; margin:8px;}
+#n2{width:100%; background-image:url(images/a31.jpg); height:100%;}
+#n2 ul{float:left; width:100% ;list-style-type:none; height:100%; margin: auto;}
+#n2 ul li{width:58px; height:80px;float:left; text-align:center; margin:10px; }
+-->
+</style>
+</head>
+
+<body style="background-image:url(images/a31.jpg) ">
+<div id="w1">
+<div id="n1">
+<div id="n11"><img src="images/a01.jpg"></div>
+<div id="n12"><a href="#" ><img src="images/a05.jpg" ></a></div>
+</div>
+<div class="style1" id="n2">
+<table width="100%" border="0" >
+  <tr>
+    <td colspan="2" height="50px"><div align="center">欢迎选用电子现金支付，请选择解锁方式并输入密匙 </div></td>
+    </tr>
+  <tr>
+    <td width="50%" height="50px"><div align="right">
+      <input name="rad1" type="radio" onclick="txt1.style.backgroundColor='#DBDBDB';txt1.disabled = true; " value="" checked/>
+  指纹&nbsp;</div></td>
+    <td width="50%"><div align="left">&nbsp;
+      <input name="rad1" type="radio" value=""  onclick="txt1.style.backgroundColor='#ffffff';txt1.disabled = false; ">
+  数字 </div></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="50px"><div align="center">
+      <input name="txt1" type="password" disabled="true" id="txt1" style=" background-color:#ffffff " onclick="txt1.value=''" value="请输入密码">
+      <input id="checkNum" type="button" onClick="javascript:checkNumPassword()" value="确认"/>
+    </div></td>
+    </tr>
+  <tr  width="50%">
+    <td rowspan="3" width="50%"><div align="right"><img src="images/2010061608154066.png" width="50"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+
+<input type="hidden" name="YuEText" id="YuEText">
+<input type="hidden" name="HintText" id="HintText">
+<input hidden="true" id="ZhiFuButton" type="hidden" onClick="javascript:window.pay.clickOnZhiFu()" value="ZhiFu"/>
+<input hidden="true" id="Successful" type="hidden" onClick="javascript:window.pay.clickOnPaySuccessfully()" value="Successfully"/>
+<input hidden="true" id="Failed" type="hidden" onClick="javascript:window.pay.clickOnSetting()" value="Setting"/>
+</div>
+</div>
+</body>
+</html>
+
+
+
